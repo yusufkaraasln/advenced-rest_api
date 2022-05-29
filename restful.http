@@ -1,0 +1,61 @@
+@BASE_URL = http://localhost:3000/api
+
+
+
+GET {{BASE_URL}}
+
+###
+
+GET {{BASE_URL}}/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mjc1NTE2MzA5NzFjZTZmYjdkNGZjNTMiLCJpYXQiOjE2NTE4NTU3NzcsImV4cCI6MTY1MTg1OTM3N30.oGJrHoqlZH62MWedcTqM81kdWV5ku1WP-6LdH_QjoWU
+###
+ 
+
+POST {{BASE_URL}}/users
+Content-Type: application/json
+
+{
+    "isim" :"yuassaadasaaaaaasuf",
+    "email" :"yuuaasfs@sdf.co",
+    "userName" :"kaaaasaaaaraaaaaaaslan",
+    "sifre":"karaaaaasslan"
+}
+###
+
+POST {{BASE_URL}}/users/giris
+Content-Type: application/json
+
+{
+    "email" :"yuuaasfs@sdf.co",
+ 
+    "sifre":"karaaaaasslan"
+}
+
+
+###
+PATCH {{BASE_URL}}/users/62541791a2ea30f9e9747243
+Content-Type: application/json
+
+{
+           
+    "isim":"veys",
+    "userName": "veys",
+    "sifre":"asdfsdsdfsdfsadf"
+
+}
+###
+
+GET {{BASE_URL}}/users/deleteAll
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mjc1NTE2MzA5NzFjZTZmYjdkNGZjNTMiLCJpYXQiOjE2NTE4NTY2NTgsImV4cCI6MTY1MTg2MDI1OH0.KmkHqPwVCngG7n6jo8NjoyIHZoXB5xkv59Oncdd7fuE
+
+###
+
+DELETE {{BASE_URL}}/users/62540c1882f5a93a7b475580
+Content-Type: application/json
+
+
+
+
+
+  
+
